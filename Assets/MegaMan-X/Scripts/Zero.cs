@@ -85,10 +85,8 @@ namespace MegaManX
 
         #region Component
         Rigidbody2D _rigidbody;
-        CapsuleCollider2D _collider;
-        SpriteRenderer _bodySprite;
-
-        [SerializeField] Transform _rayOrigin;
+        [SerializeField] CapsuleCollider2D _collider;
+        [SerializeField] SpriteRenderer _bodySprite;
         #endregion
 
         #region Data
@@ -98,8 +96,6 @@ namespace MegaManX
         void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
-            _collider = GetComponent<CapsuleCollider2D>();
-            _bodySprite = GetComponent<SpriteRenderer>();
         }
 
         void Start()
